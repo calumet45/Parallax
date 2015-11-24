@@ -883,7 +883,7 @@ img {
 .bird-box {
   position: relative;
   height: 600px;
-  background-image: url(../images/bird-bg.jpg);
+  background-image: url('http://lorempixel.com/1164/600/cats/');
   background-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
@@ -892,7 +892,7 @@ img {
 .logo {
   height: 100px;
   width: 100%;
-  background-image: url(../images/black-bird-logo.svg);
+  background-image: url('http://carpoolagency.github.io/carpool/img/svg_icons/carpool_logo_full_color.svg');
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -953,7 +953,7 @@ img {
 
 .large-window {
   height: 640px;
-  background-image: url(../images/model2.jpg);
+  background-image: url('http://lorempixel.com/1400/1600/cats/');
   background-position: center 0px;
   background-repeat: repeat-y;
   background-attachment: fixed;

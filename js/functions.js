@@ -37,7 +37,7 @@ $(window).scroll(function(){
   // Promoscope
   if(wScroll > $('.large-window').offset().top - $(window).height()){
 
-    $('.large-window').css({'background-position':'center '+ (wScroll - $('.large-window').offset().top) +'px'});
+    $('.large-window').css({'background-position':'center '+ (wScroll - ($('.large-window').offset().top/2)) +'px'});
 
     var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5);
 
