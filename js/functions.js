@@ -36,15 +36,16 @@ $(window).scroll(function(){
 
   // Promoscope
   if(wScroll > $('.large-window').offset().top - $(window).height()){
-
-    $('.large-window').css({'background-position':'center '+ (wScroll - ($('.large-window').offset().top/2)) +'px'});
+var top = $('.large-window').offset().top;
+var wh =  $(window).height();
+var move =(wScroll - ($('.large-window').offset().top/20));
+    $('.large-window').css({'background-position':'center '+ move +'px'});
 
     var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5);
 
     $('.window-tint').css({'opacity': opacity});
 
   }
-
 
   // Floating Elements
 
