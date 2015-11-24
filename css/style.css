@@ -883,7 +883,7 @@ img {
 .bird-box {
   position: relative;
   height: 600px;
-  background-image: url('http://lorempixel.com/1164/600/cats/');
+  background-image: url('http://lorempixel.com/1664/1100/cats/');
   background-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
@@ -952,8 +952,21 @@ img {
     transition: all 0.3s ease-in-out; }
 
 .large-window {
-    height: 640px;
-   width:100vw;
+    height: 500px;
+    width:100vw;
+    background-image: url('http://lorempixel.com/1400/1600/cats/');
+    background-position: center 0px;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: -50%;
+   /* border-radius: 50%;*/
+    position: relative;
+}
+.large-window2 {
+    height: 500px;
+    width:100vw;
     background-image: url('http://lorempixel.com/1400/1600/cats/');
     background-position: center 0px;
     background-repeat: repeat-y;
@@ -973,7 +986,6 @@ img {
     right: 0;
     bottom: 0;
     border-radius: 50%;
-    display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
