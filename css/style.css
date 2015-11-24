@@ -952,18 +952,22 @@ img {
     transition: all 0.3s ease-in-out; }
 
 .large-window {
-  height: 640px;
-  background-image: url('http://lorempixel.com/1400/1600/cats/');
-  background-position: center 0px;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  border-radius: 50%;
-  position: relative; }
-  .large-window .window-tint {
+    height: 640px;
+   width:100vw;
+    background-image: url('http://lorempixel.com/1400/1600/cats/');
+    background-position: center 0px;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: -50%;
+   /* border-radius: 50%;*/
+    position: relative;
+}
+.large-window .window-tint {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
+    display: none;
     top: 0;
     left: 0;
     right: 0;
@@ -972,12 +976,15 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; }
-  .large-window .promo-text {
+    opacity: 0;
+}
+.large-window .promo-text {
     color: white;
+    display: none;
     font-weight: 100;
     font-size: 50px;
-    line-height: 1.2; }
+    line-height: 1.2;
+}
     .large-window .promo-text strong {
       display: block;
       font-size: 30px; }
