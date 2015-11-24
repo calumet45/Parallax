@@ -33,18 +33,25 @@ $(window).scroll(function(){
 
   }
 
+if(wScroll > $('.large-window').offset().top - $(window).height()){
+Promoscope($('.large-window'));
+}
+if(wScroll > $('.large-window2').offset().top - $(window).height()){
+Promoscope($('.large-window2'));
+}
 
-  // Promoscope
-  if(wScroll > $('.large-window').offset().top - $(window).height()){
-var top = $('.large-window').offset().top;
+  function Promoscope (el) {
+  
+var toppx = el.offset().top;
 var wh =  $(window).height();
-var move =(wScroll - ($('.large-window').offset().top/20));
-    $('.large-window').css({'background-position':'center '+ move +'px'});
-
-    var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5);
+var move =((wScroll - toppx)/2)/-2;
+    el.css({'background-position':'center '+ move +'px'});
+console.log(move+'px');
+    var opacity = (wScroll - el.offset().top + 400) / (wScroll / 5);
 
     $('.window-tint').css({'opacity': opacity});
 
+  
   }
 
   // Floating Elements
