@@ -3,7 +3,7 @@
 body
   font-family: "Open Sans", sans-serif
 
-h1
+h1  
   color: #ccc
   weight: 300
 
@@ -13,14 +13,16 @@ figure
 .content
   position: relative
   background: white
-  margin-bottom: 400px
+  margin-bottom: 230px
   overflow: hidden
+  z-index: 2
 
   article
     padding: 100px 0
     max-width: 640px
     margin: 0 auto
     text-align: center
+    z-index: 3
 
 img
   max-width: 100%
@@ -32,19 +34,19 @@ img
 
 .bird-box
   position: relative
-  height: 600px
+  height: 400px
   background:
-    image: url(../images/bird-bg.jpg)
+    image: url('http://lorempixel.com/1800/1000/cats/')
     size: auto 600px
     position: top center
     attachment: fixed
   overflow: hidden
-
+  
 .logo
   height: 100px
   width: 100%
   background:
-    image: url(../images/black-bird-logo.svg)
+    image: url('http://carpoolagency.github.io/carpool/img/svg_icons/carpool_logo_full_color.svg')
     position: center
     repeat: no-repeat
   position: absolute
@@ -53,6 +55,7 @@ img
 
 .fore-bird
   width: 960px
+  display: none
   height: 733px
   background:
     image: url(../images/fore-bird.png)
@@ -61,10 +64,11 @@ img
   position: absolute
   left: 50%
   margin-left: -480px
-  top: 380px
+  top: 200px
 
 .back-bird
   width: 960px
+  display: none
   height: 298px
   background:
     image: url(../images/back-bird.png)
@@ -84,7 +88,7 @@ img
   figure
     margin-bottom: 20px
     position: relative
-    opacity: 0
+    opacity: 1
     transform: translateX(30px)
     transition: all 0.4s ease-in-out
     overflow: hidden
@@ -120,17 +124,24 @@ img
 
 // large-window
 
-.large-window
-  height: 640px
+.large-window, .large-window2
+  height: 70vh
+  width: 150vw
   background:
-    image: url(../images/model2.jpg)
     position: center 0px
     repeat: repeat-y
     attachment: fixed
   margin-top: 100px
   margin-bottom: 100px
-  border-radius: 50%
+  //border-radius: 50%
   position: relative
+  margin-left: -25vw
+
+.large-window
+  background-image: url('http://lorempixel.com/1900/1300/cats/')
+
+.large-window2
+  background-image: url('http://lorempixel.com/1900/1000/cats/')
 
   .window-tint
     background-color: rgba(0,0,0,0.5)
@@ -147,6 +158,7 @@ img
 
 
   .promo-text
+    display: none
     color: white
     font-weight: 100
     font-size: 50px
@@ -196,11 +208,38 @@ img
   .post-3
     transform: translate(-100px, 20px)
 
-
+.debugStuff
+  display: block
+  position: fixed
+  bottom: 0
+  margin-top: 100px
+  background:
+    color: red
 //footer
 
-footer
+footer.topFooter
   background: black
+  color: white
+  padding: 40px 0
+  overflow: visible
+  position: fixed
+  bottom: 0
+  width: 100%
+  z-index: 0
+
+  .footer-stuff
+    max-width: 640px
+    margin: 0 auto
+
+  a
+    color: white
+
+  input
+    color: #666
+
+footer.bottomFooter
+  background: gray
+  display: block
   color: white
   padding: 40px 0
   position: fixed
@@ -209,7 +248,7 @@ footer
   z-index: -1
 
   .footer-stuff
-    max-width: 640px
+    max-width: 85%
     margin: 0 auto
 
   a

@@ -1119,9 +1119,19 @@ figure {
 
 .content {
     position: relative;
-    background: white;
-    margin-bottom: 400px;
+    background: #887B7B;
+    margin-bottom: 600px;
     overflow: hidden;
+    /* box-shadow: 0px -30px 20px black inset; */
+}
+footer:before{
+    /* content:''; */
+    box-shadow: 0px 13px 30px #000 inset;
+    position: absolute;
+    top: 8px;
+    width: 95vw;
+    height: 100px;
+    overflow-y: hidden;
 }
 
 .content article {
@@ -1138,7 +1148,7 @@ img {
 .bird-box {
     position: relative;
     height: 600px;
-    background-image: url('http://lorempixel.com/1964/600/cats/');
+    background-image: url('http://lorempixel.com/1800/1000/cats/');
     background-size: auto 600px;
     background-position: top center;
     background-attachment: fixed;
@@ -1224,9 +1234,9 @@ img {
 }
 
 .large-window {
-    height: 500px;
+    height: 70vh;
     width: 140vw;
-    background-image: url('http://lorempixel.com/1900/1600/cats/');
+    background-image: url('http://lorempixel.com/1900/1300/cats/');
     background-position: center 0px;
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -1238,7 +1248,7 @@ img {
 }
 
 .large-window2 {
-    height: 500px;
+    height: 80vh;
     width: 109vw;
     background-image: url('http://lorempixel.com/1800/1600/cats/');
     background-position: center 0px;
@@ -1323,13 +1333,15 @@ img {
 }
 
 footer {
-    background: black;
-    color: white;
+    background: #45F134;
+    color: #333333;
     padding: 40px 0;
     position: fixed;
-    bottom: 0;
+    height: 200px;
     width: 100%;
     z-index: -1;
+    transition: cubic-bezier(0.89, 0.09, 0.93, 0.7) 0s bottom;
+    bottom: 0px;
 }
 
 footer .footer-stuff {
@@ -1338,7 +1350,7 @@ footer .footer-stuff {
 }
 
 footer a {
-    color: white;
+    color: #2B247F;
 }
 
 footer input {
