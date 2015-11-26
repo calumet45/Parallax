@@ -1,8 +1,8 @@
-/*var pContainerHeight = $('.bird-box').height();
+var pContainerHeight = $('.bird-box').height();
 $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
-/*
+
 //console.log(wScroll);
   if (wScroll <= pContainerHeight) {
  
@@ -29,7 +29,7 @@ $(window).scroll(function(){
     });
   }; 
 
-
+*/
 // Landing Elements
 if(wScroll > $('.clothes-pics').offset().top - ($(window).height() / 1.2)) {
 
@@ -41,7 +41,7 @@ if(wScroll > $('.clothes-pics').offset().top - ($(window).height() / 1.2)) {
     });
 
   }
-*/
+
 
 
 function Promoscope(el, dev) {
@@ -63,7 +63,7 @@ function Promoscope(el, dev) {
 }
 
 // Floating Elements
-/*
+
   if(wScroll > $('.blog-posts').offset().top - $(window).height()){
 
     var offset = (Math.min(0, wScroll - $('.blog-posts').offset().top +$(window).height() - 350)).toFixed();
@@ -73,8 +73,8 @@ function Promoscope(el, dev) {
     $('.post-3').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.2) +'px)'});
 
   }
-*/
-//});
+
+});
 
 
 ;
