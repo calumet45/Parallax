@@ -1,0 +1,23 @@
+{
+  "name": "parallax",
+  "version": "1.0.0",
+  "description": "Video Series [ for free on YouTube](https://www.youtube.com/playlist?list=PLqGj3iMvMa4IyCbhul-PdeiDqmh4ooJzk) on the [DevTips](https://www.youtube.com/user/DevTipsForDesigners) Channel",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calumet45/Parallax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calumet45/Parallax/issues"
+  },
+  "homepage": "https://github.com/calumet45/Parallax#readme",
+  "devDependencies": {
+    "reload": "^0.7.0",
+    "supervisor": "^0.9.1"
+  }
+}

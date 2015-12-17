@@ -986,7 +986,7 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\000036}}
 h1 {
-  color: #ccc;
+  color: #cccccc;
   font-weight: 300; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000310}}
@@ -1012,7 +1012,29 @@ figure {
 img {
   max-height: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000330}}
+.insideText {
+  position: absolute;
+  top: 0px;
+  left: 30%;
+  display: block;
+  font-size: 1.7em;
+  transform: translateY(0px);
+  width: 25em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000338}}
+  .insideText h3 {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-shadow: inherit; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000344}}
+  .insideText .subtext {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000352}}
 .bird-box {
   position: relative;
   height: 400px;
@@ -1022,7 +1044,7 @@ img {
   background-attachment: fixed;
   overflow: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000362}}
 .logo {
   height: 100px;
   width: 100%;
@@ -1033,7 +1055,7 @@ img {
   top: 50%;
   margin-top: -50px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000373}}
 .fore-bird {
   width: 960px;
   display: none;
@@ -1046,7 +1068,7 @@ img {
   margin-left: -480px;
   top: 200px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000386}}
 .back-bird {
   width: 960px;
   display: none;
@@ -1058,10 +1080,10 @@ img {
   left: 50%;
   margin-left: -480px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003102}}
 .clothes-pics {
   margin-bottom: 100px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003105}}
   .clothes-pics figure {
     margin-bottom: 20px;
     position: relative;
@@ -1070,22 +1092,22 @@ img {
     transition: all 0.4s ease-in-out;
     overflow: hidden;
     cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003114}}
     .clothes-pics figure.is-showing {
       opacity: 1;
       transform: translateX(0%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003118}}
     .clothes-pics figure img {
       display: block;
       transform: scale3d(1, 1, 1);
       transition: all 0.3s ease-in-out; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003124}}
     .clothes-pics figure:hover figcaption {
       left: 0%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003127}}
     .clothes-pics figure:hover img {
       transform: scale3d(1.1, 1.1, 1.1); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003130}}
   .clothes-pics figcaption {
     position: absolute;
     bottom: 10px;
@@ -1096,7 +1118,7 @@ img {
     font-size: 11px;
     transition: all 0.3s ease-in-out; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003144}}
 .large-window, .large-window2 {
   height: 70vh;
   width: 150vw;
@@ -1108,14 +1130,14 @@ img {
   position: relative;
   margin-left: -40vw; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003157}}
 .large-window {
   background-image: url("http://lorempixel.com/1900/1300/cats/"); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003160}}
 .large-window2 {
   background-image: url("http://lorempixel.com/1900/1000/cats/"); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003163}}
   .large-window2 .window-tint {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -1128,24 +1150,24 @@ img {
     justify-content: center;
     align-items: center;
     opacity: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003177}}
   .large-window2 .promo-text {
     display: none;
     color: white;
     font-weight: 100;
     font-size: 50px;
     line-height: 1.2; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003184}}
     .large-window2 .promo-text strong {
       display: block;
       font-size: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003188}}
     .large-window2 .promo-text span {
       font-weight: 300;
       font-size: 18px;
       font-style: italic;
       color: rgba(255, 255, 255, 0.6); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003195}}
     .large-window2 .promo-text .window-cta {
       font-size: 20px;
       text-decoration: none;
@@ -1153,32 +1175,32 @@ img {
       border: 1px solid white;
       padding: 10px 20px;
       transition: all 0.3s ease-in-out; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003203}}
       .large-window2 .promo-text .window-cta:hover {
         background: white;
         color: black; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003210}}
 .blog-posts {
   margin-top: 100px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003213}}
   .blog-posts .post {
     border: 1px solid #e1e1e1;
     padding: 20px 20px 0;
     background: white;
     position: relative;
     overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003220}}
   .blog-posts .post-1 {
     transform: translate(100px, 20px); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003223}}
   .blog-posts .post-2 {
     z-index: 2; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003226}}
   .blog-posts .post-3 {
     transform: translate(-100px, 20px); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003229}}
 .debugStuff {
   display: block;
   position: fixed;
@@ -1186,7 +1208,7 @@ img {
   margin-top: 100px;
   background-color: red; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003238}}
 footer.topFooter {
   background: black;
   color: white;
@@ -1196,18 +1218,18 @@ footer.topFooter {
   bottom: 0;
   width: 100%;
   z-index: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003248}}
   footer.topFooter .footer-stuff {
     max-width: 640px;
     margin: 0 auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003252}}
   footer.topFooter a {
     color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003255}}
   footer.topFooter input {
     color: #666; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003258}}
 footer.bottomFooter {
   background: gray;
   display: block;
@@ -1217,14 +1239,14 @@ footer.bottomFooter {
   bottom: 0;
   width: 100%;
   z-index: -1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003268}}
   footer.bottomFooter .footer-stuff {
     max-width: 85%;
     margin: 0 auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003272}}
   footer.bottomFooter a {
     color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/calumet45\/Documents\/cpa\/Projects\/Parallax\/css\/layout1\.sass}line{font-family:\00003275}}
   footer.bottomFooter input {
     color: #666; }
 

@@ -2,7 +2,7 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 h1 {
-  color: #ccc;
+  color: #cccccc;
   font-weight: 300; }
 
 figure {
@@ -23,6 +23,25 @@ figure {
 
 img {
   max-height: 100%; }
+
+.insideText {
+  position: absolute;
+  top: 0px;
+  left: 30%;
+  display: block;
+  font-size: 1.7em;
+  transform: translateY(0px);
+  width: 25em; }
+  .insideText h3 {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-shadow: inherit; }
+  .insideText .subtext {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: inherit; }
 
 .bird-box {
   position: relative;

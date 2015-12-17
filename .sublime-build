@@ -1,3 +1,0 @@
-{
-	    "cmd": ["jade -D $file"]
-}
