@@ -4,8 +4,8 @@ body
   font-family: "Open Sans", sans-serif
 
 h1
-  color: #ccc
-  weight: 300
+  color: #cccccc
+  font-weight: 300
 
 figure
   margin: auto
@@ -13,38 +13,57 @@ figure
 .content
   position: relative
   background: white
-  margin-bottom: 400px
+  margin-bottom: 230px
   overflow: hidden
+  z-index: 2
 
   article
     padding: 100px 0
     max-width: 640px
     margin: 0 auto
     text-align: center
+    z-index: 3
 
 img
-  max-width: 100%
+  max-height: 100%
 
-
+.insideText
+  position: absolute
+  top: 0px
+  left: 30%
+  display: block
+  font-size: 1.7em
+  transform: translateY(0px)
+  width: 25em
+  h3
+    color: white
+    font-size: 3em
+    font-weight: bold
+    font-variant: small-caps
+    text-shadow: inherit
+  .subtext
+    font-size: 1.5em
+    color: white
+    text-shadow: inherit
 
 
 // Parallax
 
 .bird-box
   position: relative
-  height: 600px
+  height: 400px
   background:
-    image: url(../images/bird-bg.jpg)
+    image: url('http://lorempixel.com/1800/1000/cats/')
     size: auto 600px
     position: top center
     attachment: fixed
   overflow: hidden
-
+  
 .logo
   height: 100px
   width: 100%
   background:
-    image: url(../images/black-bird-logo.svg)
+    image: url('http://carpoolagency.github.io/carpool/img/svg_icons/carpool_logo_full_color.svg')
     position: center
     repeat: no-repeat
   position: absolute
@@ -53,6 +72,7 @@ img
 
 .fore-bird
   width: 960px
+  display: none
   height: 733px
   background:
     image: url(../images/fore-bird.png)
@@ -61,10 +81,11 @@ img
   position: absolute
   left: 50%
   margin-left: -480px
-  top: 380px
+  top: 200px
 
 .back-bird
   width: 960px
+  display: none
   height: 298px
   background:
     image: url(../images/back-bird.png)
@@ -84,19 +105,19 @@ img
   figure
     margin-bottom: 20px
     position: relative
-    opacity: 0
-    transform: translateX(30px)
+    opacity: 1
+    transform: translateX(-100%)
     transition: all 0.4s ease-in-out
     overflow: hidden
     cursor: pointer
 
     &.is-showing
       opacity: 1
-      transform: translateX(0px)
+      transform: translateX(0%)
 
     img
       display: block
-      transform: scale(1)
+      transform: scale3d(1,1,1)
       transition: all 0.3s ease-in-out
 
     &:hover
@@ -104,7 +125,7 @@ img
         left: 0%
 
       img
-        transform: scale(1.1)
+        transform: scale3d(1.1,1.1,1.1)
 
   figcaption
     position: absolute
@@ -120,17 +141,24 @@ img
 
 // large-window
 
-.large-window
-  height: 640px
+.large-window, .large-window2
+  height: 70vh
+  width: 150vw
   background:
-    image: url(../images/model2.jpg)
     position: center 0px
     repeat: repeat-y
     attachment: fixed
   margin-top: 100px
   margin-bottom: 100px
-  border-radius: 50%
+  //border-radius: 50%
   position: relative
+  margin-left: -40vw
+
+.large-window
+  background-image: url('http://lorempixel.com/1900/1300/cats/')
+
+.large-window2
+  background-image: url('http://lorempixel.com/1900/1000/cats/')
 
   .window-tint
     background-color: rgba(0,0,0,0.5)
@@ -147,6 +175,7 @@ img
 
 
   .promo-text
+    display: none
     color: white
     font-weight: 100
     font-size: 50px
@@ -186,6 +215,7 @@ img
     padding: 20px 20px 0
     background: white
     position: relative
+    overflow: hidden
 
   .post-1
     transform: translate(100px, 20px)
@@ -196,11 +226,38 @@ img
   .post-3
     transform: translate(-100px, 20px)
 
-
+.debugStuff
+  display: block
+  position: fixed
+  bottom: 0
+  margin-top: 100px
+  background:
+    color: red
 //footer
 
-footer
+footer.topFooter
   background: black
+  color: white
+  padding: 40px 0
+  overflow: visible
+  position: fixed
+  bottom: 0
+  width: 100%
+  z-index: 0
+
+  .footer-stuff
+    max-width: 640px
+    margin: 0 auto
+
+  a
+    color: white
+
+  input
+    color: #666
+
+footer.bottomFooter
+  background: gray
+  display: block
   color: white
   padding: 40px 0
   position: fixed
@@ -209,7 +266,7 @@ footer
   z-index: -1
 
   .footer-stuff
-    max-width: 640px
+    max-width: 85%
     margin: 0 auto
 
   a
