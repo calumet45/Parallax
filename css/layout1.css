@@ -109,8 +109,6 @@ img {
       opacity: 1; }
       .clothes-pics figure.is-showing:before {
         transform: translateX(-45px); }
-        .clothes-pics figure.is-showing:before img {
-          transform: translateY(0); }
       .clothes-pics figure.is-showing img {
         transform: translateX(0%); }
     .clothes-pics figure:before {
