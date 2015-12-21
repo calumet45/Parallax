@@ -104,7 +104,7 @@ window.addEventListener("optimizedScroll", function() {
     if (wScroll > $('.large-window').offset().top - $(window).height()) {
         Promoscope($('.large-window'), -2, 'background-position');
     }
-    if ((wScroll + $(window).height()) > ($('.large-window2').offset().top + $('.insideText').height())) {
+    if ((wScroll + $(window).height()) > ($('.large-window2').offset().top + $('.insideText').outerHeight())) {
         Promoscope($('.insideText'), 1, 'transform');
     }
 
@@ -120,11 +120,11 @@ window.addEventListener("optimizedScroll", function() {
             var wh = el.parent().height();
             var elh = el.height();
             var moveSize = wh - elh;
-            var offset = ($('.large-window2').offset().top + $('.insideText').height()) - $(window).height();
-            var move = "'translateY(" + (((wScroll - offset) + $('.insideText').height()) - moveSize) + "px)'";
+            var offset = ($('.large-window2').offset().top + $('.insideText').outerHeight()) - $(window).height();
+            var move = "'translateY(" + (((wScroll - offset) + $('.insideText').outerHeight()) - moveSize) + "px)'";
 
             var toppx = ((wScroll - offset) / 2.5);
-            var movepx = ($('.large-window2').height() - $('.insideText').height());
+            var movepx = ($('.large-window2').height() - $('.insideText').outerHeight());
             if (toppx < movepx) {
                 $('.debugStuff').html('Debug: wScroll ' + wScroll + ' | moveSize ' + moveSize + ' | offset ' + offset + ' | move ' + move + ' | movepx ' + movepx + ' | toppx ' + toppx);
                 var sh = (toppx / movepx) * 10;

@@ -35,6 +35,9 @@ img
   font-size: 1.7em
   transform: translateY(0px)
   width: 25em
+  padding:
+    top: 60px
+    bottom: 60px
   h3
     color: white
     font-size: 3em
@@ -95,68 +98,9 @@ img
   left: 50%
   margin-left: -480px
 
-
-
 // Model Grid
-
-
-
-.clothes-pics figure.is-showing img {
-    transform: translateY(0)
-}
-
-.clothes-pics figure.is-showing:before {
-    transform: translateX(-45px)
-}
-
-
-
 .clothes-pics
   margin-bottom: 100px
-
-  figure
-    margin-bottom: 20px
-    position: relative
-    opacity: 1
-//    transform: translateX(-100%)
-    transition: all 0.4s ease-in-out
-    overflow: hidden
-    cursor: pointer
-
-    &.is-showing
-      opacity: 1
-      //transform: translateX(0%)
-      &:before
-        transform: translateX(-45px)
-        img
-          transform: translateY(0)
-
-    &:before
-      height: 200%
-      width: 100%
-      content: ''
-      box-shadow: 30px 0px 50px #FFF inset
-      position: absolute
-      left: 0
-      top: -50%
-      z-index: 5
-      transition: all 0.4s 0.3s ease-in-out
-      transform: translateX(0px)
-      
-
-
-    img
-      display: block
-      transform: scale3d(1,1,1)
-      transition: all 0.3s ease-in-out
-
-    &:hover
-      figcaption
-        left: 0%
-
-      img
-        transform: scale3d(1.1,1.1,1.1)
-
   figcaption
     position: absolute
     bottom: 10px
@@ -167,7 +111,43 @@ img
     font-size: 11px
     transition: all 0.3s ease-in-out
 
+  figure
+    margin-bottom: 20px
+    position: relative
+    opacity: 1
+    transition: all 0.4s ease-in-out
+    overflow: hidden
+    cursor: pointer
 
+    &.is-showing
+      opacity: 1
+      &:before
+        transform: translateX(-45px)
+        img
+          transform: translateY(0)
+      img
+        transform: translateX(0%)
+    &:before
+      height: 200%
+      width: 100%
+      content: ''
+      box-shadow: 30px 0px 50px #FFF inset
+      position: absolute
+      left: 0
+      top: -50%
+      z-index: 5
+      transition: all 0.4s 0.3s ease-in-out
+      transform: translateX(0px)      
+    img
+      display: block
+      transform: scale3d(1,1,1) translateX(-100%)
+      transition: all 0.4s cubic-bezier(0.42, 0, 0.51, 1.59)
+
+    &:hover
+      figcaption
+        left: 0%
+      img
+        transform: scale3d(1.1,1.1,1.1)
 
 // large-window
 
