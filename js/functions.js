@@ -1,5 +1,36 @@
-var pContainerHeight = $('.bird-box').height();
+/*var pContainerHeight = $('.bird-box').height();
 $(window).scroll(function() {
+
+   
+
+});
+*/
+
+;
+(function() {
+    var throttle = function(type, name, obj) {
+        obj = obj || window;
+        var running = false;
+        var func = function() {
+            if (running) {
+                return;
+            }
+            running = true;
+            requestAnimationFrame(function() {
+                obj.dispatchEvent(new CustomEvent(name));
+                running = false;
+            });
+        };
+        obj.addEventListener(type, func);
+    };
+    //   var myint=0;
+    /* init - you can init any event */
+    throttle("scroll", "optimizedScroll");
+})();
+
+
+// handle event
+window.addEventListener("optimizedScroll", function() {
 
     var wScroll = $(this).scrollTop();
 
@@ -44,10 +75,10 @@ $(window).scroll(function() {
     } else {
         $('.clothes-pics figure').each(function(i) {
 
-                setTimeout(function() {
-                    $('.clothes-pics figure').eq(i).removeClass('is-showing');
-                }, (700 * (Math.exp(i * 0.14))) - 700);
-            });
+            setTimeout(function() {
+                $('.clothes-pics figure').eq(i).removeClass('is-showing');
+            }, (700 * (Math.exp(i * 0.14))) - 700);
+        });
     }
 
 
@@ -70,34 +101,6 @@ $(window).scroll(function() {
 
     }
 
-});
-
-
-;
-(function() {
-    var throttle = function(type, name, obj) {
-        obj = obj || window;
-        var running = false;
-        var func = function() {
-            if (running) {
-                return;
-            }
-            running = true;
-            requestAnimationFrame(function() {
-                obj.dispatchEvent(new CustomEvent(name));
-                running = false;
-            });
-        };
-        obj.addEventListener(type, func);
-    };
-    //   var myint=0;
-    /* init - you can init any event */
-    throttle("scroll", "optimizedScroll");
-})();
-
-
-// handle event
-window.addEventListener("optimizedScroll", function() {
 
     var wScroll = $(this).scrollTop();
     $('.debugStuff').html('Debug: wScroll ' + wScroll + ' | ');
@@ -109,7 +112,7 @@ window.addEventListener("optimizedScroll", function() {
     }
 
     function Promoscope(el, dev, cssVal) {
-        var wScroll = $(this).scrollTop();
+ //       var wScroll = $(this).scrollTop();
 
         var toppx = el.offset().top;
 
@@ -130,7 +133,7 @@ window.addEventListener("optimizedScroll", function() {
                 var sh = (toppx / movepx) * 10;
                 $('.insideText').css({
                     'top': toppx + "px",
-                    'text-shadow': '0px ' + (sh + 4) + 'px ' + ((sh + 5) / 2) + 'px #000000'
+                    'text-shadow': '3px ' + '-' + (sh + 4) + 'px ' + ((sh + 5) / 2) + 'px #000000'
                 });
             }
         };
