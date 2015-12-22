@@ -33,7 +33,9 @@ $(window).scroll(function() {
 window.addEventListener("optimizedScroll", function() {
 
     var wScroll = $(this).scrollTop();
-
+     $('.offsetTop').each(function(el) {
+       $(this).text(parseInt($(this).offset().top));
+});
     //console.log(wScroll);
     /*    if (wScroll <= pContainerHeight) {
 
@@ -112,7 +114,7 @@ window.addEventListener("optimizedScroll", function() {
     }
 
     function Promoscope(el, dev, cssVal) {
- //       var wScroll = $(this).scrollTop();
+        //       var wScroll = $(this).scrollTop();
 
         var toppx = el.offset().top;
 
@@ -187,3 +189,11 @@ window.addEventListener("optimizedScroll", function() {
 function int(val) {
     return parseInt(val);
 }
+
+$(document).ready(function() {
+    $('div:not(.row), figure, article').each(function(el){
+       var ost = $(this).offset().top;
+        $(this).prepend('<span style="position:absolute;top:0;left:0;background:green;" class="offsetTop">'+ost+'</span>');
+  
+    });
+});
