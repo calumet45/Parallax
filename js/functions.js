@@ -1,9 +1,9 @@
 
-var contactForm = contactSection.querySelector('form'),
-    inputName = contactForm.querySelector('[name="name"]'),
-    inputEmail = contactForm.querySelector('[name="email"]'),
-    textAreaMessage = contactForm.querySelector('[name="message"]'),
-    sendButton = contactForm.querySelector('button');
+var contactForm = $('form#contactme'),
+    inputName = $('[name="name"]',contactForm),
+    inputEmail = $('[name="email"]',contactForm),
+    textAreaMessage = $('[name="message"]',contactForm),
+    sendButton = $('button',contactForm);
 
     sendButton.addEventListener('click', function(event){
       event.preventDefault(); // prevent the form to do the post.
@@ -229,6 +229,38 @@ $(document).ready(function() {
     $('div:not(.row), figure, article').each(function(el){
        var ost = $(this).offset().top;
         $(this).prepend('<span style="position:absolute;top:0;left:0;background:green;" class="offsetTop">'+ost+'</span>');
+  var contactForm = $('form#contactme'),
+    inputName = $('[name="name"]',contactForm),
+    inputEmail = $('[name="email"]',contactForm),
+    textAreaMessage = $('[name="message"]',contactForm),
+    sendButton = $('button',contactForm);
+
+    sendButton.addEventListener('click', function(event){
+      event.preventDefault(); // prevent the form to do the post.
+
+      sendButton.innerHTML = 'sending..';
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '//formspree.io/dave.means@carpoolagency.com', true);
+      xhr.setRequestHeader("Accept", "application/json")
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+
+      xhr.send(
+        "name=" + inputName.value +
+        "&email=" + inputEmail.value +
+        "&message=" + textAreaMessage.value);
+
+      xhr.onloadend = function (res) {
+        if (res.target.status === 200){
+          sendButton.innerHTML = 'Message sent!';
+        }
+        else {
+          sendButton.innerHTML = 'Error!';
+        }
+      }
+    });
+
+
   
     });
 });
