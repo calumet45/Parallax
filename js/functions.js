@@ -1,5 +1,5 @@
 
-var contactForm = $('form#contactme'),
+/*var contactForm = $('form#contactme'),
     inputName = $('[name="name"]',contactForm),
     inputEmail = $('[name="email"]',contactForm),
     textAreaMessage = $('[name="message"]',contactForm),
@@ -28,7 +28,7 @@ var contactForm = $('form#contactme'),
           sendButton.innerHTML = 'Error!';
         }
       }
-    });
+    });*/
 
 
 
