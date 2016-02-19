@@ -229,7 +229,7 @@ $(document).ready(function() {
     $('div:not(.row), figure, article').each(function(el){
        var ost = $(this).offset().top;
         $(this).prepend('<span style="position:absolute;top:0;left:0;background:green;" class="offsetTop">'+ost+'</span>');
-  var contactForm = $('form#contactme'),
+  /*var contactForm = $('form#contactme'),
     inputName = $('[name="name"]',contactForm),
     inputEmail = $('[name="email"]',contactForm),
     textAreaMessage = $('[name="message"]',contactForm),
@@ -258,7 +258,7 @@ $(document).ready(function() {
           sendButton.innerHTML = 'Error!';
         }
       }
-    });
+    });*/
 
 
 
