@@ -5,7 +5,7 @@ var contactForm = $('#contactme'),
     textAreaMessage = $('[name="message"]',contactForm),
     sendButton = $('button',contactForm);
 
-    sendButton.onClick(function(event){
+    sendButton.on('click',function(event){
       event.preventDefault(); // prevent the form to do the post.
 
       sendButton[0].innerHTML = 'sending..';
