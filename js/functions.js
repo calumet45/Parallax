@@ -22,7 +22,7 @@ var contactForm = $('#contactme'),
 
       xhr.onloadend = function (res) {
         if (res.target.status === 200){
-          sendButton[0].innerHTML = 'Message sent!';
+          contactForm[0].innerHTML = '<h3 style="color:white;">Message sent!</h3>';
         }
         else {
           sendButton[0].innerHTML = 'Error!';
