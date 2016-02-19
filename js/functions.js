@@ -1,14 +1,14 @@
 
-var contactForm = $('form#contactme'),
+var contactForm = $('#contactme'),
     inputName = $('[name="name"]',contactForm),
     inputEmail = $('[name="email"]',contactForm),
     textAreaMessage = $('[name="message"]',contactForm),
     sendButton = $('button',contactForm);
 
-    sendButton.on('click', function(event){
+    sendButton.onClick(function(event){
       event.preventDefault(); // prevent the form to do the post.
 
-      sendButton.innerHTML = 'sending..';
+      sendButton[0].innerHTML = 'sending..';
 
       var xhr = new XMLHttpRequest();
       xhr.open('POST', '//formspree.io/dave.means@carpoolagency.com', true);
@@ -16,16 +16,16 @@ var contactForm = $('form#contactme'),
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
 
       xhr.send(
-        "name=" + inputName.value +
-        "&email=" + inputEmail.value +
-        "&message=" + textAreaMessage.value);
+        "name=" + inputName.val() +
+        "&email=" + inputEmail.val() +
+        "&message=" + textAreaMessage.val());
 
       xhr.onloadend = function (res) {
         if (res.target.status === 200){
-          sendButton.innerHTML = 'Message sent!';
+          sendButton[0].innerHTML = 'Message sent!';
         }
         else {
-          sendButton.innerHTML = 'Error!';
+          sendButton[0].innerHTML = 'Error!';
         }
       }
     });
