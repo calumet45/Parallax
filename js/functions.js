@@ -5,7 +5,7 @@ var contactForm = $('form#contactme'),
     textAreaMessage = $('[name="message"]',contactForm),
     sendButton = $('button',contactForm);
 
-    sendButton.addEventListener('click', function(event){
+    sendButton.on('click', function(event){
       event.preventDefault(); // prevent the form to do the post.
 
       sendButton.innerHTML = 'sending..';
@@ -261,6 +261,6 @@ $(document).ready(function() {
     });
 
 
-  
+
     });
 });
