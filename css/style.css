@@ -892,6 +892,7 @@ textarea {
     min-height: 65px;
     padding-top: 6px;
     padding-bottom: 6px;
+    column:black;
 }
 
 input[type="email"]:focus,
